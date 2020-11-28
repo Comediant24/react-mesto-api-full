@@ -1,0 +1,14 @@
+.auth-form__is-login-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.auth-form__is-login-link:hover {
+  opacity: 0.6;
+}

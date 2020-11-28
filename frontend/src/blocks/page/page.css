@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+.page {
+  max-width: 882px;
+  min-width: 320px;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

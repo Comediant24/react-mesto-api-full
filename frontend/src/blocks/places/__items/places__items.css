@@ -1,0 +1,7 @@
+.places__items {
+  list-style-type: none;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}

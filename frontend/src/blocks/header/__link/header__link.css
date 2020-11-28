@@ -1,0 +1,8 @@
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__link_sign-in {
+  padding-left: 15px;
+}

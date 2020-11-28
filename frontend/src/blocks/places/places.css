@@ -1,0 +1,21 @@
+@import url(./__cards/places__cards.css);
+@import url(./__items/places__items.css);
+@import url(./__image/places__image.css);
+@import url(./__name/places__name.css);
+@import url(./__title/places__title.css);
+@import url(./__button-like/places__button-like.css);
+@import url(./__button-like/_enabled/places__button-like_enabled.css);
+@import url(./__button-delete/places__button-delete.css);
+@import url(./__like-counter/places__like-counter.css);
+@import url(./__like/places__like.css);
+@import url(./__loading-spinner/places__loading-spinner.css);
+
+.places {
+  margin-bottom: 66px;
+}
+
+@media screen and (max-width: 660px) {
+  .places {
+    margin-bottom: 48px;
+  }
+}

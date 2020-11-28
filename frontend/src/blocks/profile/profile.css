@@ -1,0 +1,15 @@
+@import url(./__avatar/profile__avatar.css);
+@import url(./__info/profile__info.css);
+@import url(./__user-name/profile__user-name.css);
+@import url(./__user-edit-button/profile__user-edit-button.css);
+@import url(./__user-job/profile__user-job.css);
+@import url(./__add-button/profile__add-button.css);
+@import url(./__button-avatar/profile__button-avatar.css);
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}

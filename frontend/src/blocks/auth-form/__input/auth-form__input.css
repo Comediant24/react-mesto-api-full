@@ -1,0 +1,17 @@
+.auth-form__input {
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  min-height: 27px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

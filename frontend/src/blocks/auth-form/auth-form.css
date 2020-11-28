@@ -1,0 +1,14 @@
+@import url(./__button/auth-form__button.css);
+@import url(./__container/auth-form__container.css);
+@import url(./__error/auth-form__error.css);
+@import url(./__input/auth-form__input.css);
+@import url(./__is-login-link/auth-form__is-login-link.css);
+@import url(./__title/auth-form__title.css);
+
+.auth-form {
+  max-width: 358px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+  display: flex;
+  flex-direction: column;
+}
