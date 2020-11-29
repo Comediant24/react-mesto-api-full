@@ -29,7 +29,7 @@ const deleteCard = async (req, res, next) => {
   try {
     const delCard = await Card.findByIdAndRemove({ _id: req.params.cardId });
     if (!delCard) {
-      throw NotFoundError('Карточка не найдена');
+      throw new NotFoundError('Карточка не найдена');
     } else if (delCard.owner.toString() !== req.user._id) {
       throw new ForbiddenError('Нельзя удалить карточку другого пользователя');
     }
@@ -46,7 +46,7 @@ const likeCard = async (req, res, next) => {
       { $addToSet: { likes: req.user._id } },
       { new: true },
     );
-    if (!likeCard) throw NotFoundError('Карточка не найдена');
+    if (!likedCard) throw new NotFoundError('Карточка не найдена');
     res.status(200).send(likedCard);
   } catch (error) {
     next(error);
@@ -60,7 +60,7 @@ const dislikeCard = async (req, res, next) => {
       { $pull: { likes: req.user._id } },
       { new: true },
     );
-    if (!unlikedCard) throw NotFoundError('Карточка не найдена');
+    if (!unlikedCard) throw new NotFoundError('Карточка не найдена');
     res.status(200).send(unlikedCard);
   } catch (error) {
     next(error);

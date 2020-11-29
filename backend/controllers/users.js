@@ -77,7 +77,6 @@ const updateUser = async (req, res, next) => {
       {
         new: true,
         runValidators: true,
-        upsert: true,
       },
     );
     res.status(200).send(upUser);
@@ -98,7 +97,6 @@ const updateUserAvatar = async (req, res, next) => {
       {
         new: true,
         runValidators: true,
-        upsert: true,
       },
     );
     res.status(200).send(upUser);
